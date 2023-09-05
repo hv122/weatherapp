@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
-import CurrentWeather from './src/components/CurrentWeather';
-import UpcomingWeather from './src/components/UpcomingWeather';
+import UpcomingWeather from './src/screens/UpcomingWeather';
+import City from './src/screens/City';
 /* view is the equivalent of div
 safe area view is to avoid notches and holepunches 
 when using images from their address, you have to specify their dimensions */
@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <UpcomingWeather />
+      <City/>
     </View>
   );
 }
